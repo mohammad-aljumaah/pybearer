@@ -17,16 +17,16 @@ class PyBearer:
         match strategy:
            case "jwt":
                #return JWTStrategy()
-                ...
+                pass
            case "session":
                #return SessionStrategy()
-               ...
+               pass
            case "token":
                #return TokenStrategy()
-               ...
+               pass
            case "basic":
                #return BasicStrategy()
-               return
+               pass
            case _:
                raise ValueError("Invalid strategy") # May be we add a custom exception
 
