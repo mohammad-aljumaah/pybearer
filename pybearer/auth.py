@@ -11,7 +11,7 @@ class PyBearer:
         self.strategy = self._get_strategy(strategy)
 
 
-    def _get_strategy(strategy: str):
+    def _get_strategy(self, strategy: str):
         strategy = strategy.lower()
 
         match strategy:
@@ -26,7 +26,7 @@ class PyBearer:
                ...
            case "basic":
                #return BasicStrategy()
-               ...
+               return
            case _:
                raise ValueError("Invalid strategy") # May be we add a custom exception
 
