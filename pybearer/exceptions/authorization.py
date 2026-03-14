@@ -2,13 +2,11 @@ from .base import PyBearerError
 
 class AuthorizationError(PyBearerError):
     """
-    Authorization Error:
-        This is the base class for all authorization errors.
-        Meaning that the user is not authorized to perform the action.
+    Base exception for authorization failures.
 
-    Last Updated: 2026-03-13
+    Last Updated: 2026-03-14
     """
 
-    error_code = (
+    category_error = error_code = (
         'AUTHORIZATION_ERROR'
     )

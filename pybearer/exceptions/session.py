@@ -2,14 +2,12 @@ from .base import PyBearerError
 
 class SessionError(PyBearerError):
     """
-    Session Error:
-        This is the base class for all session errors.
-        Meaning that the session is not valid.
+    Base exception for session-related errors.
 
-    Last Updated: 2026-03-13
+    Last Updated: 2026-03-14
     """
 
-    error_code = (
+    category_error = error_code = (
         'SESSION_ERROR'
     )
 

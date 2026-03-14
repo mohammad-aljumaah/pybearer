@@ -2,13 +2,11 @@ from .base import PyBearerError
 
 class UserError(PyBearerError):
     """
-    User Error:
-        This is the base class for all user errors.
-        Meaning that the user is not valid.
+    Base exception for user-related errors.
 
-    Last Updated: 2026-03-13
+    Last Updated: 2026-03-14
     """
 
-    error_code = (
+    category_error = error_code = (
         'USER_ERROR'
     )

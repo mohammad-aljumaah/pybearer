@@ -2,13 +2,11 @@ from .base import PyBearerError
 
 class TokenError(PyBearerError):
     """
-    Token Error:
-        This is the base class for all token errors.
-        Meaning that the token is not valid.
+    Base exception for token-related errors.
 
-    Last Updated: 2026-03-13
+    Last Updated: 2026-03-14
     """
 
-    error_code = (
+    category_error = error_code = (
         'TOKEN_ERROR'
     )

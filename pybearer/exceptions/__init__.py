@@ -1,12 +1,25 @@
-from .base import PyBearerError
+from .base import PyBearerError, PyBearerNotImplementedError
 from .config import (
-    ConfigurationError
+    ConfigurationError,
+
+    LoadUserNotConfiguredError,
+    VerifyPasswordNotConfiguredError,
 )
 from .strategy import (
-    StrategyError
+    StrategyError,
+
+    InvalidStrategyError,
+)
+from .model import (
+     TokenModelError,
+
+    InvalidTokenModelError,
 )
 from .authentication import (
-    AuthenticationError
+    AuthenticationError,
+
+    UserNotFoundError,
+    InvalidCredentialsError,
 )
 from .authorization import (
     AuthorizationError
@@ -23,9 +36,26 @@ from .user import (
 
 __all__ = [
     'PyBearerError',
+    'PyBearerNotImplementedError',
+    # ------------------
     'ConfigurationError',
+
+    'LoadUserNotConfiguredError',
+    'VerifyPasswordNotConfiguredError',
+    # ------------------
     'StrategyError',
+
+    'InvalidStrategyError',
+    # ------------------
+    'TokenModelError',
+
+    'InvalidTokenModelError',
+    # ------------------
     'AuthenticationError',
+
+    'UserNotFoundError',
+    'InvalidCredentialsError',
+    # ------------------
     'AuthorizationError',
     'TokenError',
     'SessionError',
